@@ -38,6 +38,8 @@ py manage.py runserver 4893
 
 ## Робота з БД. Підключення і налаштування
 ```
+"Host=ep-lively-darkness-a27mmu8y-pooler.eu-central-1.aws.neon.tech;Database=neondb;Username=neondb_owner;Password=npg_bqhGu6KCc8nM"
+
 pip install psycopg2-binary
 pip install Pillow
 
