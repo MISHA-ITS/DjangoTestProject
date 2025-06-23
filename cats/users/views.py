@@ -3,6 +3,7 @@ from .utils import optimize_image
 from .forms import CustomUserCreationForm
 from django.contrib import messages
 from .models import CustomUser
+from django.contrib.auth.views import LoginView
 
 # Create your views here.
 def register(request):
@@ -34,3 +35,6 @@ def register(request):
 def index(request):
     users = CustomUser.objects.all()
     return render(request, 'users.html', {'users': users})
+
+class CustomLoginView(LoginView):
+    template_name = 'login.html'

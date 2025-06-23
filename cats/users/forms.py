@@ -45,3 +45,5 @@ class CustomUserCreationForm(UserCreationForm):
         if CustomUser.objects.filter(email=email).exists():
             raise forms.ValidationError("Ця електронна пошта вже зареєстрована")
         return email
+    
+    
